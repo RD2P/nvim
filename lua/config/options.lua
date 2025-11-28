@@ -7,7 +7,11 @@ vim.opt.expandtab = true
 vim.opt.colorcolumn = "80"
 vim.opt.clipboard = "unnamedplus"
 
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
---vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#FFFFFF" })
+vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#FFFFFF" })
 
 vim.keymap.set('n', '<Esc>', ':noh<CR>', { silent = true })
+
+
